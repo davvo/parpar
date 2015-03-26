@@ -1,9 +1,7 @@
-var parpar = require('..'),
-    express = require('express');
+var express = require('express');
     app = express();
 
-var scheme = require('./scheme.json'),
-    parse = parpar(scheme);
+var parse = require('..')(__dirname + '/scheme.json');
 
 app.get('/', function (req, res) {
     parse(req.query, function (err, params) {

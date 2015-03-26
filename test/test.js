@@ -6,6 +6,7 @@ var scheme = {
     },
     "zip": {
         "type": "int",
+        "required": true
     },
     "city": {
         "default": "Stockholm"
@@ -14,7 +15,7 @@ var scheme = {
     "latitude": "float",
     "type": {
         "required": true,
-        "type": /^(house|apartment)$/,
+        "type": /^(house|apartment)$/
     }
 };
 
