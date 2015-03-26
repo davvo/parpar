@@ -20,10 +20,10 @@ var scheme = {
         "required": true
     },
     "longitude": {
-        "type": "float",
+        "type": "float"
     },
     "latitude": {
-        "type": "float",
+        "type": "float"
     }
 };
 
