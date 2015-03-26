@@ -1,0 +1,16 @@
+{
+    "street": {
+        "type": "string",
+        "required": true
+    },
+    "zip": {
+        "type": "int",
+        "required": true
+    },
+    "longitude": {
+        "type": "float"
+    },
+    "latitude": {
+        "type": "float"
+    }
+}
