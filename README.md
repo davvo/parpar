@@ -42,7 +42,7 @@ console.log(params);
 ## Example using express
 ```sh
 var parpar = require('parpar'),
-    express = require('express');
+    express = require('express'),
     app = express();
 
 var scheme = require('./scheme.json'),

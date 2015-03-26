@@ -1,5 +1,5 @@
 var parpar = require('..'),
-    express = require('express'),
+    express = require('express');
     app = express();
 
 var scheme = require('./scheme.json'),
