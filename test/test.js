@@ -1,11 +1,7 @@
-var parpar = require('../lib/parpar.js');
+var parpar = require('..');
 
 var scheme = {
-    "streetName": {
-        "type": "string",
-        "required": true
-    },
-    "streetNumber": {
+    "street": {
         "type": "string",
         "required": true
     },
@@ -15,17 +11,19 @@ var scheme = {
     },
     "longitude": {
         "type": "float",
-        "required": false
+    },
+    "latitude": {
+        "type": "float",
     }
 };
 
 var parse = parpar(scheme);
 
-parse({
-    streetName: 'adsf',
-    streetNumber: '123adsf',
-    zip: '0123',
-    longitude: '1.2asdf'
-}, function (err, params) {
-    console.log(err, params);
+var params = parse({
+    street: 'Upplandsgatan',
+    zip: '80282',
+    longitude: '17.172394',
+    latitude: '60.667689'
 });
+
+console.log(params);
