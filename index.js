@@ -1,1 +1,1 @@
-module.exports = require('lib/parpar');
+module.exports = require('./lib/parpar');
