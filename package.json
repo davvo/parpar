@@ -16,5 +16,8 @@
     "request",
     "parameters"
   ],
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.12.3"
+  }
 }
