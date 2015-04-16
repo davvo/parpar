@@ -16,7 +16,8 @@ var scheme = {
     "type": {
         "required": true,
         "type": /^(house|apartment)$/
-    }
+    },
+    "forSale": "boolean"
 };
 
 var parse = parpar(scheme);
@@ -26,7 +27,8 @@ var params = parse({
     zip: '80282',
     longitude: '17.172394',
     latitude: '60.667689',
-    type: 'house'
+    type: 'house',
+    forSale: 'false'
 });
 
 console.log(params);
