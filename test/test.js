@@ -24,11 +24,11 @@ var parse = parpar(scheme);
 
 var params = parse({
     street: 'Upplandsgatan',
-    zip: '80282',
-    longitude: '17.172394',
-    latitude: '60.667689',
+    zip: 80282,
+    longitude: 17.172394,
+    latitude: 60.667689,
     type: 'house',
-    forSale: 'false'
+    forSale: false
 });
 
 console.log(params);
